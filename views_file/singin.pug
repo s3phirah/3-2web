@@ -1,0 +1,108 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(property='og:type' content='website')
+  title Galaxy cluster
+  link(rel='icon' href='./favicon.png')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
+  link(rel='stylesheet' href='./CSS/login.css')
+  // lodash
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js' integrity='sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==' crossorigin='anonymous' referrerpolicy='no-referrer')
+  // gsap
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js' integrity='sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==' crossorigin='anonymous' referrerpolicy='no-referrer')
+  // swiper
+  link(rel='stylesheet' href='https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css')
+  script(src='https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js')
+  // scrollmagic
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js' integrity='sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==' crossorigin='anonymous' referrerpolicy='no-referrer')
+  // defer : html이 준비되면 사용
+  script(defer='' src='./js/youtube.js')
+  script(defer='' src='./js/main.js')
+// HEADER
+header
+  .inner
+    a.logo(href='/')
+      img(src='./images/starbucks_logo.png' alt='STABUCKS')
+    .sub-menu
+      ul.menu
+        li
+          a(href='/singin') Sign In
+        li
+          a(href='javascript:void(0)') SQL
+        li
+          a(href='javascript:void(0)') Server
+      .search
+        input(type='text')
+        .material-icons search
+    ul.main-menu
+      li.item
+        .item__name COFFEE
+        .item__contents
+          .contents__menu
+            ul.inner
+              li
+                h4 aa
+                ul.menu__contents
+                  li
+                    a(href='javascript:void(0)') 스타벅스 원두
+                  li
+                    a(href='javascript:void(0)') 스타벅스 비아
+                  li
+                    a(href='javascript:void(0)') 스타벅스 오리가미
+              li
+                h4 에스프레소 음료
+                ul
+                  li 도피오
+                  li 마끼아또
+                  li 아메리카노
+                  li 카푸치노
+                  li 라떼
+                  li 모카
+                  li 리스트레또
+          .contents__texture
+            .inner
+              h4 나와 어울리는 커피 찾기
+              p 스타벅스가 여러분에게 어울리는 커피를 찾아드립니다.
+              h4 최상의 커피를 즐기는 법
+              p 여러가지 방법을 통해 다양한 풍미의 커피를 즐겨보세요.
+      li.item
+        .item__name MENU
+        .item__contents
+          .contents__menu
+          .contents__texture
+      li.item
+        .item__name STORE
+        .item__contents
+          .contents__menu
+          .contents__texture
+      li.item
+        .item__name MY STARBUCKS REWARDS
+        .item__contents
+      li.item
+        .item__name RESPONSIBILITY
+        .item__contents
+      li.item
+        .item__name WHAT'S NEW
+        .item__contents
+    //-   visual
+section.signin
+  h1 로그인
+  .signin__card
+    h2 홈페이지에 접속하신걸 환영합니다.
+      form
+        input(type= 'text' placeholder = '아이디를 입력하세요')
+        input(type= 'password' placeholder = '비밀번호를 입력하세요')
+        input(type= 'submit' value = '로그인')
+    .actions
+      a(href='javascript:void(0)') 회원가입
+      a(href='javascript:void(0)') 아이디 찾기
+      a(href='javascript:void(0)') 비밀번호 찾기
+footer
+  .inner
+    .menu
